@@ -8,6 +8,7 @@
 - ./src/redis-server redisMaster.conf 
 - ./src/redis-server redisSlave1.conf 
 - ./src/redis-server redisSlave2.conf 
+
 ## 启动哨兵
 - ./src/redis-sentinel sentinel.conf 
 - ./src/redis-sentinel sentinel26380.conf 
@@ -77,7 +78,7 @@ hz 10
 aof-rewrite-incremental-fsync yes
 ```
 
- ### sentinel.conf配置
+### sentinel.conf配置
 ```$xslt
 bind 192.168.15.31
 port 26379
