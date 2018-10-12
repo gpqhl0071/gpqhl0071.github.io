@@ -12,7 +12,7 @@
 ## 启动哨兵
 - ./src/redis-sentinel sentinel.conf 
 - ./src/redis-sentinel sentinel26380.conf 
-- ./src/reis-sentinel sentinel26381.conf
+- ./src/redis-sentinel sentinel26381.conf
 
 ## 配置
 ### redis.conf
