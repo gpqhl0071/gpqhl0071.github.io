@@ -11,3 +11,4 @@
 # 其他
 - [github自定义域名](其他/github自定义域名.md)
 - [MySQL服务端安装及启动(Ubuntu)](其他/MySQL8服务端安装及启动.md)
+- [备忘单](其他/cheat-sheets.pdf)
