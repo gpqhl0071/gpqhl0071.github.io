@@ -12,4 +12,6 @@
 - [github自定义域名](其他/github自定义域名.md)
 - [MySQL服务端安装及启动(Ubuntu)](其他/MySQL8服务端安装及启动.md)
 - [git\maven\java](其他/cheat-sheets.pdf)
-- [spring annocation](其他/zt_spring_annotations_cheat_sheet.pdf)
+- [spring annocation备忘单](其他/zt_spring_annotations_cheat_sheet.pdf)
+- [Linux备忘单](Linux常用命令/davechild_linux-command-line.pdf)
+- [vi命令备忘单](Linux常用命令/ericg_vi-editor.pdf)
