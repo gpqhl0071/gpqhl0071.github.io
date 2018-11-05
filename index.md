@@ -2,7 +2,9 @@
 
 - [查询命令](Linux常用命令/查询命令.md)
 - [Linux备忘单](Linux常用命令/davechild_linux-command-line.pdf)
+- [Linux备忘单1](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/#3_8211_PERFORMANCE_MONITORING_AND_STATISTICS)
 - [vim命令备忘单](Linux常用命令/nwilde_vim.pdf)
+
 
 # 工作相关
 - [测试环境redis哨兵配置及启动脚本](工作相关/Redis启动.md)
