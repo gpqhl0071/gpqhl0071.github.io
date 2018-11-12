@@ -18,3 +18,4 @@
 - [git\maven\java](其他/cheat-sheets.pdf)
 - [spring annocation备忘单](其他/zt_spring_annotations_cheat_sheet.pdf)
 - [redis备忘单](其他/tasjaevan_redis.pdf)
+- [MySQL常用语句](MySQL/常用SQL.md)
