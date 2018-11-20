@@ -22,3 +22,4 @@
 - [其他 -- git\maven\java](其他/cheat-sheets.pdf)
 - [其他 -- spring annocation备忘单](其他/zt_spring_annotations_cheat_sheet.pdf)
 - [其他 -- redis备忘单](其他/tasjaevan_redis.pdf)
+- [其他 -- maven settings.xml配置](其他/maven_setting.md)
