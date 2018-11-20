@@ -1,7 +1,4 @@
-通过gitlab import方式导入项目
-```aidl
-https://2058@forex.com.cn:Forex2018@gitee.com/enation/docker.git
-```
+
 ---
 
 参考：https://www.cnblogs.com/phpper/p/8391607.html  
