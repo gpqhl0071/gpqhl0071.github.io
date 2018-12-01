@@ -69,6 +69,11 @@ firewall-cmd --reload
 ```aidl
 yum -y install net-tools
 ```
+---
+找不到基础命令
+```
+export PATH=/bin:/usr/bin:$PATH
+```
 
 参考：  
 https://blog.csdn.net/linshuhe1/article/details/72900659
