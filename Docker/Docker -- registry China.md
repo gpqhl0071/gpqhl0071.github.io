@@ -12,5 +12,7 @@ $ sudo systemctl daemon-reload
 $ sudo systemctl restart docker
 ```
 
+重启后，使用`docker info`命令查看
+
 参考：  
 https://yeasy.gitbooks.io/docker_practice/install/mirror.html
