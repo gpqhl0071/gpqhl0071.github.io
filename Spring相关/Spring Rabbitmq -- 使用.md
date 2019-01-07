@@ -84,7 +84,7 @@ public class MessageProducer {
 
 ```
 
-```xml
+```java
 package com.redhorse.service;
 
 import org.slf4j.Logger;
