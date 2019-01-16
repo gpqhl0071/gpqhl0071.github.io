@@ -50,7 +50,7 @@ $ git rm --cached [file]
 $ git mv [file-original] [file-renamed]
 ```
 
-代码提交
+# 代码提交
 ```git
 # 提交暂存区到仓库区
 $ git commit -m [message]
