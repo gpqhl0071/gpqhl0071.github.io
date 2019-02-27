@@ -3,6 +3,8 @@
 通过以下URL可以读取配置中心配置信息
 ```
 http://localhost:1201/config-client/dev/master
+
+http://localhost:8888/application-dev.yml
 ```
 
 
