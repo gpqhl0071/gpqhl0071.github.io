@@ -2,11 +2,14 @@
 - [常用 -- MySQL常用语句](MySQL/NO1--常用SQL.md)
 
 # Linux常用
-
-- [Linux -- 查询命令](Linux/NO1--查询命令.md)
-- [Linux -- Linux备忘单](Linux/PDF1--davechild_linux-command-line.pdf)
-- [Linux -- Linux备忘单1](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/#3_8211_PERFORMANCE_MONITORING_AND_STATISTICS)
-- [Linux -- vim命令备忘单](Linux/PDF3--nwilde_vim.pdf)
+- [NO1--查询命令.md](Linux/NO1--查询命令.md)
+- [NO2--VIM -- 常用命令.md](Linux/NO2--VIM--常用命令.md)
+- [NO3--centOS -- mini版本安装-初始安装.md](Linux/NO3--centOS--mini版本安装-初始安装.md)
+- [NO4--centOS -- JAVA环境变量设置.md](Linux/NO4--centOS--JAVA环境变量设置.md)
+- [NO5--Rabbit MQ.md](Linux/NO5--Rabbit MQ.md)
+- [PDF1--davechild_linux-command-line.pdf](Linux/PDF1--davechild_linux-command-line.pdf)
+- [PDF2--ericg_vi-editor.pdf](Linux/PDF2--ericg_vi-editor.pdf)
+- [PDF3--nwilde_vim.pdf](Linux/PDF3--nwilde_vim.pdf)
 
 
 # 工作相关
