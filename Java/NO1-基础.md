@@ -6,12 +6,12 @@ Java虚拟机（JVM）是运行 Java 字节码的虚拟机。JVM有针对不同�
 ## Java 程序从源代码到运行一般有下面3步：
    
 
-![image](Java/pic/jvm1.png)
+![](http://ww1.sinaimg.cn/large/9b13c8fdly1g0tfhposslj20lb04swej.jpg)
 
 > 我们需要格外注意的是 .class->机器码 这一步。在这一步 jvm 类加载器首先加载字节码文件，然后通过解释器逐行解释执行，这种方式的执行速度会相对比较慢。而且，有些方法和代码块是经常需要被调用的，也就是所谓的热点代码，所以后面引进了 JIT 编译器，JIT 属于运行时编译。当 JIT 编译器完成第一次编译后，其会将字节码对应的机器码保存下来，下次可以直接使用。而我们知道，机器码的运行效率肯定是高于 Java 解释器的。这也解释了我们为什么经常会说 Java 是编译与解释共存的语言。
 
 
-![image](Java/pic/jvm3.png)
+![](http://ww1.sinaimg.cn/large/9b13c8fdly1g0tfh6hml0j20ku0amjs1.jpg)
 
 1. 程序计数器
 
