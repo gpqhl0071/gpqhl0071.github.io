@@ -55,4 +55,19 @@ Table），用于存放编译期生成的各种字面量和符号引用，这部
 7.**直接内存** 
 > 
 
-https://www.cnblogs.com/dingyingsi/p/3760447.html
+## Object obj = new Object();
+
+> 假设这句代码出现在方法体中，那“Object obj”这部分的语义将会反映到Java 栈的本地变量表中，作为一个reference 类型数据出现。
+而“new Object()”这部分的语义将会反映到Java 堆中，形成一块存储了Object 类型所有实例数据值（Instance Data，对象中各个实例字段的数据）的结构化内存，
+根据具体类型以及虚拟机实现的对象内存布局（Object Memory Layout）的不同，
+这块内存的长度是不固定的。另外，在Java 堆中还必须包含能查找到此对象类型数据（如对象类型、父类、实现的接口、方法等）的地址信息，这些类型数据则存储在方法区中。
+由于reference 类型在Java 虚拟机规范里面只规定了一个指向对象的引用，并没有定义这个引用应该通过哪种方式去定位，以及访问到Java 堆中的对象的具体位置，
+因此不同虚拟机实现的对象访问方式会有所不同，主流的访问方式有两种：使用句柄和直接指针。
+
+**使用句柄访问方式**  
+![](http://ww1.sinaimg.cn/large/9b13c8fdly1g0u0clw2xjj20ku09l0tk.jpg)
+
+**使用直接指针访问方式**  
+![](http://ww1.sinaimg.cn/large/9b13c8fdly1g0u0e76wtqj20ku09fmxs.jpg)  
+
+参考：https://www.cnblogs.com/dingyingsi/p/3760447.html
