@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                        http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <localRepository>E:/mavenJar</localRepository>
+    <interactiveMode/>
+    <usePluginRegistry/>
+    <offline/>
+
+    <proxies>
+    </proxies>
+
+    <mirrors>
+        <!-- mirrorOf: pom.xml repositories repository id -->
+<!--        <mirror>
+            <id>local-nexus-mirror</id>
+            <name>local nexus mirror</name>
+            <url>${local-nexus.repositories}/nexus/repository/maven-public/</url>
+            <mirrorOf>central,spring-libs-release,spring-milestone,spring-libs-snapshot,conjars.org,clojars.org,org.jboss.repository,codehaus-mule-repo,repo.jenkins-ci.org</mirrorOf>
+        </mirror> -->
+    </mirrors>
+
+    <servers>
+        <!-- see: http://maven.apache.org/guides/mini/guide-encryption.html -->
+        <!-- mvn &#x002d;&#x002d;encrypt-password ${password} -->
+        <!-- accept RSA key fingerprint -->
+        <!-- ssh -o UserKnownHostsFile=~/.ssh/known_hosts root@local-mvnsite -p 10022 -->
+        <server>
+            <id>local-nexus-releases</id>
+            <username>deployment</username>
+            <password>deployment</password>
+        </server>
+        <server>
+            <id>local-nexus-snapshots</id>
+            <username>deployment</username>
+            <password>deployment</password>
+        </server>
+        <server>
+            <id>local-mvnsite</id>
+            <username>deployment</username>
+            <password>deployment</password>
+        </server>
+        <server>
+            <id>internal-nexus-releases</id>
+            <username>deployment</username>
+            <password>deployment</password>
+        </server>
+        <server>
+            <id>internal-nexus-snapshots</id>
+            <username>deployment</username>
+            <password>deployment</password>
+        </server>
+        <server>
+            <id>internal-mvnsite</id>
+            <username>deployment</username>
+            <password>deployment</password>
+        </server>
+    </servers>
+
+    <activeProfiles>
+        <!-- <activeProfile>local-nexus</activeProfile> -->
+        <activeProfile>internal-nexus</activeProfile>
+    </activeProfiles>
+
+    <pluginGroups>
+        <pluginGroup>org.apache.maven.plugins</pluginGroup>
+        <pluginGroup>org.codehaus.mojo</pluginGroup>
+        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+    </pluginGroups>
+
+    <profiles>
+        <profile>
+            <id>local-nexus</id>
+            <properties>
+                <!--checkstyle.config.location>http://hostname:port/checks.xml</checkstyle.config.location-->
+            </properties>
+            <repositories>
+                <repository>
+                    <id>local-nexus-public</id>
+                    <name>local nexus public</name>
+                    <url>${local-nexus.repositories}/maven-public/</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </repository>
+                <repository>
+                    <id>local-nexus-releases</id>
+                    <name>local nexus releases</name>
+                    <url>${local-nexus.repositories}/maven-releases/</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </repository>
+                <repository>
+                    <id>local-nexus-snapshots</id>
+                    <name>local nexus snapshots</name>
+                    <url>${local-nexus.repositories}/maven-snapshots/</url>
+                    <releases><enabled>false</enabled></releases>
+                    <snapshots><enabled>true</enabled></snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>local-nexus-public</id>
+                    <name>local nexus public</name>
+                    <url>${local-nexus.repositories}/maven-public/</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>local-nexus-releases</id>
+                    <name>local nexus releases</name>
+                    <url>${local-nexus.repositories}/maven-releases/</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>local-nexus-snapshots</id>
+                    <name>local nexus snapshots</name>
+                    <url>${local-nexus.repositories}/maven-snapshots/</url>
+                    <releases><enabled>false</enabled></releases>
+                    <snapshots><enabled>true</enabled></snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+        <profile>
+            <id>internal-nexus</id>
+            <repositories>
+                <repository>
+                    <id>internal-nexus-public</id>
+                    <name>internal nexus public</name>
+                    <url>http://nexus.td.internal/nexus/repository/maven-public/</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </repository>
+                <repository>
+                    <id>internal-nexus-releases</id>
+                    <name>internal nexus releases</name>
+                    <url>http://nexus.td.internal/nexus/repository/maven-releases/</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </repository>
+                <repository>
+                    <id>internal-nexus-snapshots</id>
+                    <name>internal nexus snapshots</name>
+                    <url>http://nexus.td.internal/nexus/repository/maven-snapshots/</url>
+                    <releases><enabled>false</enabled></releases>
+                    <snapshots><enabled>true</enabled></snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>internal-nexus-public</id>
+                    <name>internal nexus public</name>
+                    <url>http://nexus.td.internal/nexus/repository/maven-public/</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>internal-nexus-releases</id>
+                    <name>internal nexus releases</name>
+                    <url>http://nexus.td.internal/nexus/repository/maven-releases/</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>internal-nexus-snapshots</id>
+                    <name>internal nexus snapshots</name>
+                    <url>http://nexus.td.internal/nexus/repository/maven-snapshots/</url>
+                    <releases><enabled>false</enabled></releases>
+                    <snapshots><enabled>true</enabled></snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile> 
+    </profiles>
+</settings>
