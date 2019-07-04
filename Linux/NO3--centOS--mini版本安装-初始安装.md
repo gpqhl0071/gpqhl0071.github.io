@@ -49,6 +49,8 @@ service network restart
 ```
 
 ## 关闭指定端口防火墙：
+
+https://www.cnblogs.com/moxiaoan/p/5683743.html
 ```aidl
 systemctl status firewalld  
 
