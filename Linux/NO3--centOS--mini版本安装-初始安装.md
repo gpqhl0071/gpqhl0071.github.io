@@ -13,24 +13,16 @@ vi  ifcfg-ens33  #编辑配置文件
 ```
 ```aidl
 TYPE=Ethernet
-BOOTPROTO=static  #启用静态IP地址
+BOOTPROTO=static
+NAME=ens33
+ONBOOT=yes
 DEFROUTE=yes
 PEERDNS=yes
 PEERROUTES=yes
-IPV4_FAILURE_FATAL=no
-IPV6INIT=yes
-IPV6_AUTOCONF=yes
-IPV6_DEFROUTE=yes
-IPV6_PEERDNS=yes
-IPV6_PEERROUTES=yes
-IPV6_FAILURE_FATAL=no
-NAME=ens33
-UUID=4be07929-15e9-4049-8679-8fa809b5389d
-ONBOOT=yes              #开启自动启用网络连接
-IPADDR0=192.168.169.22  #设置IP地址
-PREFIXO0=24             #设置子网掩码
-GATEWAY0=192.168.169.2  #设置网关
-DNS1=114.114.114.114    #这个是国内的DNS地址，是固定的；
+IPADDR0=192.168.3.30
+PREFIXO0=24
+GATEWAY0=192.168.3.1
+DNS1=114.114.114.114
 ```
 ```aidl
 service network restart
