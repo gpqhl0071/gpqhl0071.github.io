@@ -1,6 +1,9 @@
 # 常用
 - [常用 -- MySQL常用语句](MySQL/NO1--常用SQL.md)
 
+# Java
+- [计算机进制相关.md](Java/NO7-计算机进制相关.md)
+
 # Linux常用
 - [NO1--查询命令.md](Linux/NO1--查询命令.md)
 - [NO2--VIM -- 常用命令.md](Linux/NO2--VIM--常用命令.md)
