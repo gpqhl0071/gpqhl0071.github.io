@@ -16,6 +16,11 @@ CMD ["mvn", "-version"]
 docker build -t gpimage01:tag1 /gaopeng
 ```
 
+- -t − is to mention a tag to the image
+- ImageName − This is the name you want to give to your image.
+- TagName − This is the tag you want to give to your image.
+- Dir − The directory where the Docker File is present.
+    
 - 执行后结果
 ```shell
 [root@localhost gaopeng]# docker build -t gpimage01:tag1 /gaopeng
