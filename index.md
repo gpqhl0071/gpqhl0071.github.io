@@ -1,5 +1,6 @@
 # 常用
 - [常用 -- MySQL常用语句](MySQL/NO1--常用SQL.md)
+- [MAC -- IDEA快捷键](MAC/IDEA-MAC快捷键.md)
 
 # Java
 - [计算机进制相关.md](Java/NO7-计算机进制相关.md)
