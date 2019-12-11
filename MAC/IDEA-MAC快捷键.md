@@ -7,8 +7,8 @@
     - [普通edit操作](#普通edit操作)
 
 - [二、Search/Replace（查询/替换）](二、Search/Replace（查询/替换）)
-- [三、Usage Search（使用地点查询）](三、Usage Search（使用地点查询）)
-- [四、Compile and Run（编译和运行）](四、Compile and Run（编译和运行）)
+- [三、Usage Search（使用地点查询）](三、UsageSearch（使用地点查询）)
+- [四、Compile and Run（编译和运行）](四、CompileandRun（编译和运行）)
 - [五、Debugging（调试）](五、Debugging（调试）)
 - [六、Navigation（导航）](六、Navigation（导航）)
     - [跳转](跳转) 
@@ -16,8 +16,8 @@
     - [窗口](窗口) 
     - [书签](书签) 
 - [七、Refactoring（重构）](七、Refactoring（重构）)
-- [八、VCS/Local History（版本控制/本地历史记录）](八、VCS/Local History（版本控制/本地历史记录）)
-- [九、Live Templates（动态代码模板）](九、Live Templates（动态代码模板）)
+- [八、VCS/Local History（版本控制/本地历史记录）](八、VCS/LocalHistory（版本控制/本地历史记录）)
+- [九、Live Templates（动态代码模板）](九、LiveTemplates（动态代码模板）)
 - [十、General（通用）](十、General（通用）)
 
 
@@ -104,7 +104,7 @@
 | ⌘ ⇧ S	| 查询结构（Ultimate Edition 版专用，需要在Keymap中设置）	| ☆ |
 | ⌘ ⇧ M	| 替换结构（Ultimate Edition 版专用，需要在Keymap中设置）	| ☆ |
 
-# 三、Usage Search（使用地点查询）
+# 三、UsageSearch（使用地点查询）
 
 |快捷键|	说明	|使用频率|
 |---|---|---|
@@ -112,7 +112,7 @@
 | ⌘ ⇧ F7	| 高亮显示在本文件中使用地点	| ★★★|
 | ⌘ ⌥ F7	| 显示使用地点	| ★★★|
 
-# 四、Compile and Run（编译和运行）
+# 四、CompileandRun（编译和运行）
 
 |快捷键	|说明	|使用频率|
 |---|---|---|
@@ -207,7 +207,7 @@
 |⌘ ⌥ C	| 将选中的代码提取为常量	|☆|
 |⌘ ⌥ P	| 将选中的代码提取为参数	|☆|
 
-# 八、VCS/Local History（版本控制/本地历史记录）
+# 八、VCS/LocalHistory（版本控制/本地历史记录）
 
 |快捷键	|说明|	使用频率|
 |---|---|---|
@@ -216,7 +216,7 @@
 |⌥ ⇧ C	|查看最近的变更记录	|★|
 |⌃ C	|快速弹出版本控制器操作面板	|★★★★★|
 
-# 九、Live Templates（动态代码模板）
+# 九、LiveTemplates（动态代码模板）
 
 |快捷键|	说明	|使用频率|
 |---|---|---|
