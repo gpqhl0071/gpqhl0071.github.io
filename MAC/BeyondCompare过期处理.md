@@ -12,3 +12,5 @@ rm "/Users/$(whoami)/Library/Application Support/Beyond Compare/registry.dat"
 ```
 
 For mac, try running chmod 777 BCompare in step three
+
+[参考](https://gist.github.com/huqi/35f2a0792aef830898ca)
